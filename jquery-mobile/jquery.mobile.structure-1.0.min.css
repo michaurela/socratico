@@ -541,7 +541,7 @@ span.ui-slider-label-a{left:-100%;margin-right:-1px}
 
 span.ui-slider-label-b{right:-100%;margin-left:-1px}
 
-img { display:table-caption; border-radius:10px; max-height:100px; max-width:100px; min-height:10px; min-width:10px;  }
+img { display:table-caption; border-radius:10px; max-height:100px; max-width:100px; min-height:1px; min-width:1px;  }
  #banner{ max-width:250px }
  .logots{ float:right}
 .titulo{ font-size:20px; color:white; text-align:center; font-weight:bold; text-transform:uppercase}
