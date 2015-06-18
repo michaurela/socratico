@@ -2,16 +2,9 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Aplic. Web de jQuery Mobile</title>
-<!--<link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
-<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>!-->
-
-<link rel="stylesheet" href="themes/morado.min.css" />
-<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-
+<title>Trimestre Socr&aacute;tico</title>
+<link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
 <style type="text/css">
 #apDiv1 {
 	position: absolute;
@@ -20,69 +13,181 @@
 	z-index: 1;
 }
 </style>
-<!--<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
-<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>!-->
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
 </head> 
 <body> 
 
-<div data-role="page" id="page">
+<div data-role="page" id="page" align="center">
 	<div data-role="header">
-		<a href="#page">Inicio</a><div align="center"><img src="images/logo.png" width="50%" alt="logo"></div>
+		<div align="center"><img src="images/logo.png"  id="banner" alt="logo">
+		</div>
 	</div>
-	<div data-role="content">
-              <div data-role="collapsible-set">
-                <div data-role="collapsible" data-theme="c">
-                  <h3>Ensayos</h3>
-                  <p>
-           		  <ul data-role="listview" data-theme="c">
-                            <li><a href="#addtemas">Agregar temas</a></li>
-            				<li><a href="#consulttemas">Consultar temas</a></li>
-            				<li><a href="#addensayos">Agregar Ensayos</a></li>
-							<li><a href="#consultensayos">Consultar ensayos</a></li>
-                  </ul>	
-                  
-                  
-                  </p>
-                </div>
-                <div data-collapsed="true" data-role="collapsible" data-theme="c">
-                  <h3>Talleres</h3>
-                  <p>
-           		  <ul data-role="listview">
-                            <li><a href="#addtalleres">Agregar talleres</a></li>
-            				<li><a href="#consulttalleres">Consultar talleres</a></li>
-            				<li><a href="#addparticipantes">Agregar participantes</a></li>
-							<li><a href="#consultparticipantes">Consultar participantes</a></li>
-                  </ul>
-                  </p>
-                </div>
-                <div data-role="collapsible" data-collapsed="true">
-                  <h3>Encuentros culturales</h3>
-                  <p>
-           		  <ul data-role="listview">
-                            <li><a href="#addencuentros">Agregar Encuentros</a></li>
-            				<li><a href="#consultencuentros">Consultar Encuentros</a></li>
-                  </ul>
-                  </p>
-                </div>
-                <div data-role="collapsible" data-collapsed="true">
-                  <h3>Calificaciones</h3>
-                  <p>
-           		  <ul data-role="listview">
-                            <li><a href="#notasensayos">Cargar notas de ensayos</a></li>
-            				<li><a href="#notastalleres">Cargar notas de talleres</a></li>
-            				<li><a href="#notasencuentros">Cargar notas de encuentros</a></li>
-							<li><a href="#consultnotas">Consultar notas</a></li>
-                  </ul>
-                  </p>
-                </div>
-                <div data-role="collapsible" data-collapsed="true">
-                  <h3>Galería</h3>
-                  <p>Contenido</p>
-                </div>
-              </div>	
-    			
-	</div>
+    
+       <div data-role="collapsible-set" align="Center">
+			        <div data-role="collapsible">
+			          <h3>Ensayos</h3>
+			          <p>
+			          			<div data-role="content">	
+										<div data-role="content">	
+					                        <ul data-role="listview">
+					                            <li><a href="#addtemas">Agregar temas</a></li>
+					            				<li><a href="#consulttemas">Consultar temas</a></li>
+					            				<li><a href="#addensayos">Agregar Ensayos</a></li>
+												<li><a href="#consultensayos">Consultar ensayos</a></li>
+					                        </ul>		
+										</div>		
+								</div>
+			          </p>
+			        </div>
+		        <div data-role="collapsible" data-collapsed="true">
+		          <h3>Talleres</h3>
+		          <p>
+		          			<div data-role="content">	
+									<div data-role="content">	
+				                        <ul data-role="listview">
+				                            <li><a href="#addtalleres">Agregar talleres</a></li>
+				            				<li><a href="#consulttalleres">Consultar talleres</a></li>
+				            				<li><a href="#addparticipantes">Agregar participantes</a></li>
+											<li><a href="#consultparticipantes">Consultar participantes</a></li>
+				                        </ul>		
+									</div>	
+							</div>
+		          </p>
+		        </div>
+					        <div data-role="collapsible" data-collapsed="true">
+					          <h3>Encuentros Culturales</h3>
+					          <p>
+					          			<div data-role="content">	
+												<div data-role="content">	
+						                            <ul data-role="listview">
+						                                <li><a href="#addencuentros">Agregar Encuentros</a></li>
+						                                <li><a href="#consultencuentros">Consultar Encuentros</a></li>
+						                            </ul>		
+												</div>		
+										</div>
+					          </p>
+					        </div>
+		        <div data-role="collapsible" data-collapsed="true">
+		          <h3>Calificaciones</h3>
+		          
+		          				<div data-role="content">	
+									<div data-role="content">	
+		                                <ul data-role="listview">
+		                                    <li><a href="#notasensayos">Cargar notas de ensayos</a></li>
+		                                    <li><a href="#notastalleres">Cargar notas de talleres</a></li>
+		                                    <li><a href="#notasencuentros">Cargar notas de encuentros</a></li>
+		                                    <li><a href="#consultnotas">Consultar notas</a></li>
+		                                </ul>		
+									</div>		
+								</div>
+		          
+		        </div>
+		        <div data-role="collapsible" data-collapsed="true">
+		          <h3>Galer&iacute;a</h3>
+		          <p>          
+				          <div class="ui-grid-b" align="center">
+				            <div class="ui-block-a" align="center" style="font-size:20px; font-weight:bold">Talleres</div>
+				            <div class="ui-block-b"  align="center" style="font-size:20px; font-weight:bold">Encuentros Culturales</div>
+				            <div class="ui-block-c"  align="center" style="font-size:20px; font-weight:bold">Otras</div>
+				            <div class="ui-block-a"  align="center"><a href="#talleres"><img src="images/lobo1.jpg"  alt="Lobo"></a></div>
+				            <div class="ui-block-b"  align="center"> <a href="#encuentros"><img src="images/HPIM5561.JPG" alt="df"></a></div>
+				            <div class="ui-block-c"  align="center"> <a href="#otras"><img src="images/HPIM5408.JPG" alt="asd"></a></div>
+				          </div>
+		          </p>
+		        </div>
+      </div>
+    
+	
 	<div data-role="footer">
+		<h6 align="center">Todos los derechos reservados.</h6>
+		<p align="center">Desarrollado por la Ing. Michelle G&oacute;mez</p>
+	</div>
+</div>
+
+<div data-role="page" id="talleres">
+  <div data-role="header">
+    <a href="#page" data-role="button" data-icon="home" data-iconpos="right">Inicio</a><img src="images/logo.png" class="logots" ><span class="titulo">Galer&iacute;a de los Talleres</span>
+  </div>
+  <div data-role="content">
+                <div class="ui-grid-c">
+                  <div class="ui-block-a" align="center"><a href="images/galeria/talleres/taller1.jpg" target="_self"><img src="images/galeria/talleres/taller1.jpg" height="50%"  ></a></div>
+                  <div class="ui-block-b" align="center"><a href="images/galeria/talleres/taller2.jpg" target="_self"><img src="images/galeria/talleres/taller2.jpg"  height="50%" ></a></div>
+                  <div class="ui-block-c" align="center"><a href="images/galeria/talleres/taller3.jpg" target="_self"><img src="images/galeria/talleres/taller3.jpg" height="50%"  ></a></div>
+                  <div class="ui-block-d" align="center"><a href="images/galeria/talleres/taller4.jpg" target="_self"><img src="images/galeria/talleres/taller4.jpg" height="50%"  ></a></div>
+                  <div class="ui-block-a" align="center"><a href="images/galeria/talleres/taller5.jpg" target="_self"><img src="images/galeria/talleres/taller5.jpg"  height="50%" ></a></div>
+                  <div class="ui-block-b" align="center"><a href="images/galeria/talleres/taller6.jpg" target="_self"><img src="images/galeria/talleres/taller6.jpg" height="50%"  ></a></div>
+                  <div class="ui-block-c" align="center"><a href="images/galeria/talleres/taller7.jpg" target="_self"><img src="images/galeria/talleres/taller7.jpg" height="50%"  ></a></div>
+                  <div class="ui-block-d" align="center"><a href="images/galeria/talleres/taller8.jpg" target="_self"><img src="images/galeria/talleres/taller8.jpg"  height="50%" ></a></div>
+                  <div class="ui-block-a" align="center"><a href="images/galeria/talleres/taller9.jpg" target="_self"><img src="images/galeria/talleres/taller9.jpg" height="50%"  ></a></div>
+                  <div class="ui-block-b" align="center"><a href="images/galeria/talleres/taller10.jpg" target="_self"><img src="images/galeria/talleres/taller10.jpg" height="50%"  ></a></div>
+                  <div class="ui-block-c" align="center"><a href="images/galeria/talleres/taller11.jpg" target="_self"><img src="images/galeria/talleres/taller11.jpg" height="50%"  ></a></div>
+                  <div class="ui-block-d" align="center"><a href="images/galeria/talleres/taller12.jpg" target="_self"><img src="images/galeria/talleres/taller12.jpg" height="50%"  ></a></div>
+                  <div class="ui-block-a" align="center"><a href="images/galeria/talleres/taller13.jpg" target="_self"><img src="images/galeria/talleres/taller13.jpg" height="50%"  ></a></div>
+                  <div class="ui-block-b" align="center"><a href="images/galeria/talleres/taller14.jpg" target="_self"><img src="images/galeria/talleres/taller14.jpg" height="50%"  ></a></div>
+                  <div class="ui-block-c" align="center"><a href="images/galeria/talleres/taller15.jpg" target="_self"><img src="images/galeria/talleres/taller15.jpg" height="50%"  ></a></div>
+                  <div class="ui-block-d" align="center"><a href="images/galeria/talleres/taller16.jpg" target="_self"><img src="images/galeria/talleres/taller16.jpg" height="50%"  ></a></div>
+                </div>
+  		
+  </div>
+  <div data-role="footer">
+		<h6 align="center">Todos los derechos reservados.</h6>
+		<p align="center">Desarrollado por la Ing. Michelle G&oacute;mez</p>
+	</div>
+</div>
+
+<div data-role="page" id="encuentros">
+  <div data-role="header">
+    <a href="#page" data-role="button" data-icon="home" data-iconpos="right">Inicio</a><img src="images/logo.png" class="logots" ><span class="titulo">
+Galer&iacute;a de los Encuentros Culturales</span>
+  </div>
+  <div data-role="content">
+                <div class="ui-grid-c">
+                  <div class="ui-block-a"><a href="images/galeria/encuentros/encuentro1.jpg" target="_self"><img src="images/galeria/encuentros/encuentro1.jpg" height="50%" ></a></div>
+                  <div class="ui-block-b"><a href="images/galeria/encuentros/encuentro2.jpg" target="_self"><img src="images/galeria/encuentros/encuentro2.jpg" height="50%" ></a></div>
+                  <div class="ui-block-c"><a href="images/galeria/encuentros/encuentro3.jpg" target="_self"><img src="images/galeria/encuentros/encuentro3.jpg" height="50%" ></a></div>
+                  <div class="ui-block-d"><a href="images/galeria/encuentros/encuentro4.jpg" target="_self"><img src="images/galeria/encuentros/encuentro4.jpg" height="50%" ></a></div>
+                  <div class="ui-block-a"><a href="images/galeria/encuentros/encuentro5.jpg" target="_self"><img src="images/galeria/encuentros/encuentro5.jpg" height="50%" ></a></div>
+                  <div class="ui-block-b"><a href="images/galeria/encuentros/encuentro6.jpg" target="_self"><img src="images/galeria/encuentros/encuentro6.jpg" height="50%" ></a></div>
+                  <div class="ui-block-c"><a href="images/galeria/encuentros/encuentro7.jpg" target="_self"><img src="images/galeria/encuentros/encuentro7.jpg" height="50%" ></a></div>
+                  <div class="ui-block-d"><a href="images/galeria/encuentros/encuentro8.jpg" target="_self"><img src="images/galeria/encuentros/encuentro8.jpg" height="50%" ></a></div>
+                  <div class="ui-block-a"><a href="images/galeria/encuentros/encuentro9.jpg" target="_self"><img src="images/galeria/encuentros/encuentro9.jpg" height="50%" ></a></div>
+                  <div class="ui-block-b"><a href="images/galeria/encuentros/encuentro10.jpg" target="_self"><img src="images/galeria/encuentros/encuentro10.jpg" height="50%" ></a></div>
+                  <div class="ui-block-c"><a href="images/galeria/encuentros/encuentro11.jpg" target="_self"><img src="images/galeria/encuentros/encuentro11.jpg" height="50%" ></a></div>
+                  <div class="ui-block-d"><a href="images/galeria/encuentros/encuentro12.jpg" target="_self"><img src="images/galeria/encuentros/encuentro12.jpg" height="50%" ></a></div>
+                  <div class="ui-block-a"><a href="images/galeria/encuentros/encuentro13.jpg" target="_self"><img src="images/galeria/encuentros/encuentro13.jpg" height="50%" ></a></div>
+                  <div class="ui-block-b"><a href="images/galeria/encuentros/encuentro14.jpg" target="_self"><img src="images/galeria/encuentros/encuentro14.jpg" height="50%" ></a></div>
+                  <div class="ui-block-c"><a href="images/galeria/encuentros/encuentro15.jpg" target="_self"><img src="images/galeria/encuentros/encuentro15.jpg" height="50%" ></a></div>
+                  <div class="ui-block-d"><a href="images/galeria/encuentros/encuentro16.jpg" target="_self"><img src="images/galeria/encuentros/encuentro16.jpg" height="50%" ></a></div>
+                </div>
+  		
+  </div>
+  <div data-role="footer">
+		<h6 align="center">Todos los derechos reservados.</h6>
+		<p align="center">Desarrollado por la Ing. Michelle G&oacute;mez</p>
+	</div>
+</div>
+
+<div data-role="page" id="otras">
+  <div data-role="header">
+    <a href="#page" data-role="button" data-icon="home" data-iconpos="right">Inicio</a><img src="images/logo.png" class="logots" ><span class="titulo">
+Otras Fotos</span>
+  </div>
+  <div data-role="content">
+                <div class="ui-grid-c">
+                  <div class="ui-block-a"><a href="images/galeria/otras/otras1.jpg" target="_self"><img src="images/galeria/otras/otras1.jpg" height="50%" ></a></div>
+                  <div class="ui-block-b"><a href="images/galeria/otras/otras2.jpg" target="_self"><img src="images/galeria/otras/otras2.jpg" height="50%" ></a></div>
+                  <div class="ui-block-c"><a href="images/galeria/otras/otras3.jpg" target="_self"><img src="images/galeria/otras/otras3.jpg" height="50%" ></a></div>
+                  <div class="ui-block-d"><a href="images/galeria/otras/otras4.jpg" target="_self"><img src="images/galeria/otras/otras4.jpg" height="50%" ></a></div>
+                  <div class="ui-block-a"><a href="images/galeria/otras/otras5.jpg" target="_self"><img src="images/galeria/otras/otras5.jpg" height="50%" ></a></div>
+                  <div class="ui-block-b"><a href="images/galeria/otras/otras6.jpg" target="_self"><img src="images/galeria/otras/otras6.jpg" height="50%" ></a></div>
+                  <div class="ui-block-c"><a href="images/galeria/otras/otras7.jpg" target="_self"><img src="images/galeria/otras/otras7.jpg" height="50%" ></a></div>
+                  <div class="ui-block-d"><a href="images/galeria/otras/otras8.jpg" target="_self"><img src="images/galeria/otras/otras8.jpg" height="50%" ></a></div>
+                  
+                </div>
+  		
+  </div>
+  <div data-role="footer">
 		<h6 align="center">Todos los derechos reservados.</h6>
 		<p align="center">Desarrollado por la Ing. Michelle G&oacute;mez</p>
 	</div>
@@ -95,49 +200,11 @@
 
 
 
-<div data-role="page" id="galeria">
-	<div d<div data-role="page" id="calificaciones">
-	<div data-role="header">
-		<h1>Calificaciones</h1>
-	</div>
-	<div data-role="content">	
-					<div data-role="content">	
-                        <ul data-role="listview" data-theme="a">
-                            <li><a href="#notasensayos">Cargar notas de ensayos</a></li>
-            				<li><a href="#notastalleres">Cargar notas de talleres</a></li>
-            				<li><a href="#notasencuentros">Cargar notas de encuentros</a></li>
-							<li><a href="#consultnotas">Consultar notas</a></li>
-                        </ul>		
-					</div>		
-	</div>
-	<div data-role="footer">
-		<h4>Pie de página</h4>
-	</div>
-</div>
 
-ta-role="header">
-		<h1>Galer&iacute;a</h1>
-	</div>
-                <div data-role="content">	
-                    <ul data-role="listview">
-                        
-                        <li align="center"><a href="#fotostalleres">Talleres</a>
-                           <img src="images/HPIM5408.JPG" width="20%"  alt="foto1"> 
-                        </li>
-                        <li><a href="#fotosencuentros">Encuentros culturales</a> <img src="images/HPIM5535.JPG" width="20%"  alt="foto2"></li>
-                        <li><a href="#fotosotras">Otras Fotos</a><img src="images/HPIM5561.JPG" width="20%"  alt="foto3"></li>
-                        
-                    </ul>		
-                </div>		
-		
-	<div data-role="footer">
-		<h4>Pie de página</h4>
-	</div>
-</div>
 
 <div data-role="page" id="addtemas">
-	<div data-role="header">
-		<h1>Agregar temas</h1>
+	<div data-role="header" align="center">
+		<a href="#page" data-role="button" data-icon="home" data-iconpos="right">Inicio</a><img src="images/logo.png" class="logots" ><span class="titulo">Agregar temas</span>
 	</div>
 	<div data-role="content">	
 		<form action="" method="post" name="addtema">
@@ -148,205 +215,587 @@ ta-role="header">
                                         <option value="aj2015">Abr-Jul 2015</option>
                                         <option value="sd2015">Sep-Dic 2015</option>
             							</select>
-                                       <input name="aceptar" type="button" class="boton" value="Aceptar">
+        	<input type="submit" value="Agregar" data-icon="plus" />
+        	<button data-icon="delete">Cancelar</button>
+            
+                                        
         </form>		
 	</div>
-	<div data-role="footer" align="center">
-		<a href="#page">Inicio</a> 
+	<div data-role="footer">
+		<h6 align="center">Todos los derechos reservados.</h6>
+		<p align="center">Desarrollado por la Ing. Michelle G&oacute;mez</p>
 	</div>
 </div>
 
 <div data-role="page" id="consulttemas">
 	<div data-role="header">
-		<h1>Consultar temas</h1>
+		<a href="#page" data-role="button" data-icon="home" data-iconpos="right">Inicio</a><img src="images/logo.png" class="logots" ><span class="titulo">Consultar temas</span>
 	</div>
-	<div data-role="content">	
-		Contenido		
+	<div data-role="content">
+              <div data-role="fieldcontain">
+                <label for="selectmenu" class="select">Seleccione el Trimestre:</label>
+                <select name="selectmenu" id="selectmenu">
+                  						<option value="sd2014">Sep-Dic 2014</option>
+                                        <option value="ea2015">Ene-Abr 2015</option>
+                                        <option value="aj2015">Abr-Jul 2015</option>
+                                        <option value="sd2015">Sep-Dic 2015</option>
+                </select>
+                <input type="submit" value="Consultar" data-icon="search" />
+                <button data-icon="delete">Cancelar</button>
+                
+                
+              </div>	
+		 		
 	</div>
 	<div data-role="footer">
-		<h4>Pie de página</h4>
+		<h6 align="center">Todos los derechos reservados.</h6>
+		<p align="center">Desarrollado por la Ing. Michelle G&oacute;mez</p>
 	</div>
 </div>
 
 <div data-role="page" id="addensayos">
 	<div data-role="header">
-		<h1>Agregar ensayos</h1>
+		<a href="#page" data-role="button" data-icon="home" data-iconpos="right">Inicio</a><img src="images/logo.png" class="logots" ><span class="titulo">Agregar ensayos</span>
 	</div>
-	<div data-role="content">	
-		Contenido		
+	<div data-role="content">
+              <div data-role="fieldcontain">
+              
+              	  <label for="textinput">Ingrese el c&oacute;digo:</label>
+                <input type="text" name="textinput" id="textinput" value=""  />
+                <label for="textinput">Ingrese la c&eacute;dula:</label>
+                <input type="text" name="textinput" id="textinput" value=""  />
+                  <label for="selectmenu2" class="select">Seleccione el tema:</label>
+                  <select name="selectmenu2" id="selectmenu2">
+                    <option value="option1">Opción 1</option>
+                    <option value="option2">Opción 2</option>
+                    <option value="option3">Opción 3</option>
+                  </select>
+                  <input type="button" value="Agregar" data-icon="custom" />
+                  <button data-icon="delete">Cancelar</button>
+                  
+                  
+               
+                
+              </div>	
+			
+        	
 	</div>
 	<div data-role="footer">
-		<h4>Pie de página</h4>
+		<h6 align="center">Todos los derechos reservados.</h6>
+		<p align="center">Desarrollado por la Ing. Michelle G&oacute;mez</p>
 	</div>
 </div>
 
 <div data-role="page" id="consultensayos">
 	<div data-role="header">
-		<h1>Consultar ensayos</h1>
+		<a href="#page" data-role="button" data-icon="home" data-iconpos="right">Inicio</a><img src="images/logo.png" class="logots" ><span class="titulo">Consultar ensayos</span>
 	</div>
-	<div data-role="content">	
-		Contenido		
+	<div data-role="content">
+                  <div data-role="fieldcontain">
+                    <label for="selectmenu3" class="select">Seleccione el trimestre:</label>
+                    <select name="selectmenu3" id="selectmenu3">
+                      <option value="sd2014">Sep-Dic 2014</option>
+                                        <option value="ea2015">Ene-Abr 2015</option>
+                                        <option value="aj2015">Abr-Jul 2015</option>
+                                        <option value="sd2015">Sep-Dic 2015</option>
+                    </select>
+                     
+                      <label for="textinput2">Ingrese c&eacute;dula:</label>
+                      <input type="text" name="textinput2" id="textinput2" value=""  />
+                      <input type="button" value="Consultar" data-icon="search" />
+                      <button data-icon="delete">Cancelar</button>
+                      
+                     
+                    
+                    
+                  </div>	
+		 				
 	</div>
 	<div data-role="footer">
-		<h4>Pie de página</h4>
+		<h6 align="center">Todos los derechos reservados.</h6>
+		<p align="center">Desarrollado por la Ing. Michelle G&oacute;mez</p>
 	</div>
 </div>
 
 <div data-role="page" id="addtalleres">
 	<div data-role="header">
-		<h1>Agregar Talleres</h1>
+		<a href="#page" data-role="button" data-icon="home" data-iconpos="right">Inicio</a><img src="images/logo.png" class="logots" ><span class="titulo">Agregar Talleres</span>
 	</div>
-	<div data-role="content">	
-		Contenido		
-	</div>
+	<div data-role="content">
+                          <div data-role="fieldcontain">
+                          	<label for="selectmenu3" class="select">Seleccione el trimestre:</label>
+                                <select name="selectmenu3" id="selectmenu3">
+                                  <option value="sd2014">Sep-Dic 2014</option>
+                                                    <option value="ea2015">Ene-Abr 2015</option>
+                                                    <option value="aj2015">Abr-Jul 2015</option>
+                                                    <option value="sd2015">Sep-Dic 2015</option>
+                                </select>
+                            <label for="textinput3">Ingrese el nombre del taller:</label>
+                            <input type="text" name="textinput3" id="textinput3" value=""  />
+                            <input type="button" value="Agregar" data-icon="custom" />
+                  			<button data-icon="delete">Cancelar</button>
+                          </div>
+      
+    		
+     </div>
 	<div data-role="footer">
-		<h4>Pie de página</h4>
+		<h6 align="center">Todos los derechos reservados.</h6>
+		<p align="center">Desarrollado por la Ing. Michelle G&oacute;mez</p>
 	</div>
 </div>
 
 <div data-role="page" id="consulttalleres">
 	<div data-role="header">
-		<h1>Consultar Talleres</h1>
+		<a href="#page" data-role="button" data-icon="home" data-iconpos="right">Inicio</a><img src="images/logo.png" class="logots" ><span class="titulo">Consultar Talleres</span>
 	</div>
-	<div data-role="content">	
-		Contenido		
+	<div data-role="content">
+    <div data-role="fieldcontain">	
+		<label for="selectmenu" class="select">Seleccione el Trimestre:</label>
+                <select name="selectmenu" id="selectmenu">
+                  						<option value="sd2014">Sep-Dic 2014</option>
+                                        <option value="ea2015">Ene-Abr 2015</option>
+                                        <option value="aj2015">Abr-Jul 2015</option>
+                                        <option value="sd2015">Sep-Dic 2015</option>
+                </select>
+                <input type="submit" value="Consultar" data-icon="search" />
+                <button data-icon="delete">Cancelar</button>		
 	</div>
+    </div>
 	<div data-role="footer">
-		<h4>Pie de página</h4>
+		<h6 align="center">Todos los derechos reservados.</h6>
+		<p align="center">Desarrollado por la Ing. Michelle G&oacute;mez</p>
 	</div>
 </div>
 
 <div data-role="page" id="addparticipantes">
 	<div data-role="header">
-		<h1>Agregar Participantes</h1>
+		<a href="#page" data-role="button" data-icon="home" data-iconpos="right">Inicio</a><img src="images/logo.png" class="logots" ><span class="titulo">Agregar Participantes</span>
 	</div>
 	<div data-role="content">	
-		Contenido		
+					<div data-role="fieldcontain">	
+					<label for="selectmenu" class="select">Seleccione el Trimestre:</label>
+                <select name="selectmenu" id="selectmenu">
+                  						<option value="sd2014">Sep-Dic 2014</option>
+                                        <option value="ea2015">Ene-Abr 2015</option>
+                                        <option value="aj2015">Abr-Jul 2015</option>
+                                        <option value="sd2015">Sep-Dic 2015</option>
+                </select>
+                 
+                  <label for="selectmenu4" class="select">Seleccione el taller:</label>
+                  <select name="selectmenu4" id="selectmenu4">
+                    <option value="option1">Opción 1</option>
+                    <option value="option2">Opción 2</option>
+                    <option value="option3">Opción 3</option>
+                  </select>
+                   
+                    <label for="textinput4">Ingrese la c&eacute;dula:</label>
+                    <input type="text" name="textinput4" id="textinput4" value=""  />
+                   
+<input type="submit" value="Agregar" data-icon="plus" />
+                <button data-icon="delete">Cancelar</button>		
+	</div>		
 	</div>
 	<div data-role="footer">
-		<h4>Pie de página</h4>
+		<h6 align="center">Todos los derechos reservados.</h6>
+		<p align="center">Desarrollado por la Ing. Michelle G&oacute;mez</p>
 	</div>
 </div>
 
 <div data-role="page" id="consultparticipantes">
 	<div data-role="header">
-		<h1>Consultar Participantes</h1>
+		<a href="#page" data-role="button" data-icon="home" data-iconpos="right">Inicio</a><img src="images/logo.png" class="logots" ><span class="titulo">Consultar Participantes</span>
 	</div>
 	<div data-role="content">	
-		Contenido		
+						<div data-role="fieldcontain">	
+					<label for="selectmenu" class="select">Seleccione el Trimestre:</label>
+                <select name="selectmenu" id="selectmenu">
+                  						<option value="sd2014">Sep-Dic 2014</option>
+                                        <option value="ea2015">Ene-Abr 2015</option>
+                                        <option value="aj2015">Abr-Jul 2015</option>
+                                        <option value="sd2015">Sep-Dic 2015</option>
+                </select>
+                 
+                  <label for="selectmenu4" class="select">Seleccione el taller:</label>
+                  <select name="selectmenu4" id="selectmenu4">
+                    <option value="option1">Opción 1</option>
+                    <option value="option2">Opción 2</option>
+                    <option value="option3">Opción 3</option>
+                  </select>
+                  <input type="submit" value="Consultar" data-icon="search" />
+                <button data-icon="delete">Cancelar</button>
+          </div>        	
 	</div>
 	<div data-role="footer">
-		<h4>Pie de página</h4>
+		<h6 align="center">Todos los derechos reservados.</h6>
+		<p align="center">Desarrollado por la Ing. Michelle G&oacute;mez</p>
 	</div>
 </div>
 
 <div data-role="page" id="addencuentros">
 	<div data-role="header">
-		<h1>Agregar Encuentros</h1>
+		<a href="#page" data-role="button" data-icon="home" data-iconpos="right">Inicio</a><img src="images/logo.png" class="logots" ><span class="titulo">Agregar Encuentros</span>
 	</div>
 	<div data-role="content">	
-		Contenido		
+						<div data-role="fieldcontain">	
+					<label for="selectmenu" class="select">Seleccione el Trimestre:</label>
+                <select name="selectmenu" id="selectmenu">
+                  						<option value="sd2014">Sep-Dic 2014</option>
+                                        <option value="ea2015">Ene-Abr 2015</option>
+                                        <option value="aj2015">Abr-Jul 2015</option>
+                                        <option value="sd2015">Sep-Dic 2015</option>
+                </select>
+                 
+                  <label for="textinput5">Introduzca el nombre del encuentro:</label>
+                  <input type="text" name="textinput5" id="textinput5" value=""  />
+                  <p></p>
+                  <label for="fecha" >Seleccione el Trimestre:</label>
+                 <input type="date" name="fecha" class="texto" />
+                <input type="submit" value="Agregar" data-icon="plus" />
+                <button data-icon="delete">Cancelar</button>
+         </div>       
 	</div>
 	<div data-role="footer">
-		<h4>Pie de página</h4>
+		<h6 align="center">Todos los derechos reservados.</h6>
+		<p align="center">Desarrollado por la Ing. Michelle G&oacute;mez</p>
 	</div>
 </div>
 
 <div data-role="page" id="consultencuentros">
 	<div data-role="header">
-		<h1>Consultar Encuentros</h1>
+		<a href="#page" data-role="button" data-icon="home" data-iconpos="right">Inicio</a><img src="images/logo.png" class="logots" ><span class="titulo">Consultar Encuentros</span>
 	</div>
 	<div data-role="content">	
-		Contenido		
+					<div data-role="fieldcontain">	
+					<label for="selectmenu" class="select">Seleccione el Trimestre:</label>
+                <select name="selectmenu" id="selectmenu">
+                  						<option value="sd2014">Sep-Dic 2014</option>
+                                        <option value="ea2015">Ene-Abr 2015</option>
+                                        <option value="aj2015">Abr-Jul 2015</option>
+                                        <option value="sd2015">Sep-Dic 2015</option>
+                </select>
+                 
+                   <input type="submit" value="Consultar" data-icon="search" />
+                <button data-icon="delete">Cancelar</button>
+
+                	
+                
+            </div>
 	</div>
 	<div data-role="footer">
-		<h4>Pie de página</h4>
+		<h6 align="center">Todos los derechos reservados.</h6>
+		<p align="center">Desarrollado por la Ing. Michelle G&oacute;mez</p>
 	</div>
 </div>
 
 <div data-role="page" id="notasensayos">
 	<div data-role="header">
-		<h1>Cargar notas de ensayos</h1>
+		<a href="#page" data-role="button" data-icon="home" data-iconpos="right">Inicio</a><img src="images/logo.png" class="logots" ><span class="titulo">Cargar notas de ensayos</span>
 	</div>
-	<div data-role="content">	
-		Contenido		
+	<div data-role="content">
+              <div data-role="fieldcontain">
+                <label for="selectmenu5" class="select">Seleccione el trimestre:</label>
+                <select name="selectmenu5" id="selectmenu5">
+                  <option value="sd2014">Sep-Dic 2014</option>
+                                        <option value="ea2015">Ene-Abr 2015</option>
+                                        <option value="aj2015">Abr-Jul 2015</option>
+                                        <option value="sd2015">Sep-Dic 2015</option>
+                </select>
+                <a href="#carganotasensayos" data-role="button" data-icon="plus">Agregar</a>
+              </div>	
+		   		
 	</div>
 	<div data-role="footer">
-		<h4>Pie de página</h4>
+		<h6 align="center">Todos los derechos reservados.</h6>
+		<p align="center">Desarrollado por la Ing. Michelle G&oacute;mez</p>
 	</div>
 </div>
 
 <div data-role="page" id="notastalleres">
 	<div data-role="header">
-		<h1>Cargar notas de talleres</h1>
+		<a href="#page" data-role="button" data-icon="home" data-iconpos="right">Inicio</a><img src="images/logo.png" class="logots" ><span class="titulo">Cargar notas de talleres</span>
 	</div>
 	<div data-role="content">	
-		Contenido		
+		 <div data-role="fieldcontain">
+                <label for="selectmenu5" class="select">Seleccione el trimestre:</label>
+                <select name="selectmenu5" id="selectmenu5">
+                  <option value="sd2014">Sep-Dic 2014</option>
+                                        <option value="ea2015">Ene-Abr 2015</option>
+                                        <option value="aj2015">Abr-Jul 2015</option>
+                                        <option value="sd2015">Sep-Dic 2015</option>
+                </select>
+                
+                  <label for="selectmenu6" class="select">Seleccione el Taller:</label>
+                  <select name="selectmenu6" id="selectmenu6">
+                    <option value="option1">Opción 1</option>
+                    <option value="option2">Opción 2</option>
+                    <option value="option3">Opción 3</option>
+                  </select>
+                
+<a href="#carganotastalleres" data-role="button" data-icon="plus">Agregar</a>
+              </div>		
 	</div>
 	<div data-role="footer">
-		<h4>Pie de página</h4>
+		<h6 align="center">Todos los derechos reservados.</h6>
+		<p align="center">Desarrollado por la Ing. Michelle G&oacute;mez</p>
 	</div>
 </div>
 
 <div data-role="page" id="notasencuentros">
 	<div data-role="header">
-		<h1>Cargar notas de Encuentros</h1>
+		<a href="#page" data-role="button" data-icon="home" data-iconpos="right">Inicio</a><img src="images/logo.png" class="logots" ><span class="titulo">Cargar notas de Encuentros</span>
 	</div>
 	<div data-role="content">	
-		Contenido		
+					 <div data-role="fieldcontain">
+                <label for="selectmenu5" class="select">Seleccione el trimestre:</label>
+                <select name="selectmenu5" id="selectmenu5">
+                  <option value="sd2014">Sep-Dic 2014</option>
+                                        <option value="ea2015">Ene-Abr 2015</option>
+                                        <option value="aj2015">Abr-Jul 2015</option>
+                                        <option value="sd2015">Sep-Dic 2015</option>
+                </select>
+                
+                  <label for="selectmenu6" class="select">Seleccione el Encuentro:</label>
+                  <select name="selectmenu6" id="selectmenu6">
+                    <option value="option1">Opción 1</option>
+                    <option value="option2">Opción 2</option>
+                    <option value="option3">Opción 3</option>
+                  </select>
+                
+<a href="#carganotasencuentros" data-role="button" data-icon="plus">Agregar</a>
+              </div>		
 	</div>
 	<div data-role="footer">
-		<h4>Pie de página</h4>
+		<h6 align="center">Todos los derechos reservados.</h6>
+		<p align="center">Desarrollado por la Ing. Michelle G&oacute;mez</p>
 	</div>
 </div>
 
 <div data-role="page" id="consultnotas">
 	<div data-role="header">
-		<h1>Consultar notas</h1>
+		<a href="#page" data-role="button" data-icon="home" data-iconpos="right">Inicio</a><img src="images/logo.png" class="logots" ><span class="titulo">Consultar notas</span>
 	</div>
-	<div data-role="content">	
-		Contenido		
+	<div data-role="content">
+                          <div data-role="fieldcontain">
+                            <label for="selectmenu7" class="select">Seleccione el Trimestre:</label>
+                            <select name="selectmenu7" id="selectmenu7">
+                              <option value="ea2015">Ene-Abr 2015</option>
+                                        <option value="aj2015">Abr-Jul 2015</option>
+                                        <option value="sd2015">Sep-Dic 2015</option>
+                            </select>
+                            <a href="#consultanotas" data-role="button" data-icon="search">Consultar</a>
+                          </div>	
+							
 	</div>
 	<div data-role="footer">
-		<h4>Pie de página</h4>
+		<h6 align="center">Todos los derechos reservados.</h6>
+		<p align="center">Desarrollado por la Ing. Michelle G&oacute;mez</p>
 	</div>
+</div>
+<div data-role="page" id="carganotasensayos">
+  <div data-role="header">
+    <a href="#page" data-role="button" data-icon="home" data-iconpos="right">Inicio</a><img src="images/logo.png" class="logots" ><span class="titulo">Cargar notas de Ensayos</span>
+  </div>
+  <div data-role="content">
+    <div class="ui-grid-b"  align="center">
+      <div class="ui-block-a" style="font-weight:bold; font-size:18px; background-color:#909FFF " >C&eacute;dula</div>
+      <div class="ui-block-b" style="font-weight:bold; font-size:18px;background-color:#909FFF">Estudiante</div>
+      <div class="ui-block-c" style="font-weight:bold; font-size:18px;background-color:#909FFF">Calificaci&oacute;n</div>
+      <div class="ui-block-a" style="background-color:#90D5FF"><br /><br /><br /><br /><br /></div>
+      <div class="ui-block-b" style="background-color:#90D5FF"><br /><br /><br /><br /><br /></div>
+      <div class="ui-block-c" style="background-color:#90D5FF">
+        <div data-role="fieldcontain">
+           
+          
+          <input type="range" name="slider" id="slider" value="0" min="0" max="4" />
+        </div>
+      </div>
+      <div class="ui-block-a" style="background-color:#909FFF" ><br /><br /><br /><br /><br /></div>
+      <div class="ui-block-b" style="background-color:#909FFF"  ><br /><br /><br /><br /><br /></div>
+      <div class="ui-block-c" style="background-color:#909FFF"  >
+      							<div data-role="fieldcontain">
+          
+          
+          <input type="range" name="slider" id="slider" value="0" min="0" max="4" />
+        </div>
+      </div>
+      <div class="ui-block-a" style="background-color:#90D5FF" ><br /><br /><br /><br /><br /></div>
+      <div class="ui-block-b" style="background-color:#90D5FF" ><br /><br /><br /><br /><br /></div>
+      <div class="ui-block-c" style="background-color:#90D5FF" >
+      				<div data-role="fieldcontain">
+          
+          
+          <input type="range" name="slider" id="slider" value="0" min="0" max="4" />
+        </div>
+      </div>
+      <div class="ui-block-a"  style="background-color:#909FFF" ><br /><br /><br /><br /><br /></div>
+      <div class="ui-block-b"  style="background-color:#909FFF" ><br /><br /><br /><br /><br /></div>
+      <div class="ui-block-c" style="background-color:#909FFF" >
+      							<div data-role="fieldcontain">
+          
+          
+          <input type="range" name="slider" id="slider" value="0" min="0" max="4" />
+        </div>
+      </div>
+    </div>
+  		<input type="button" value="Aceptar" data-icon="plus" />
+      <button data-icon="delete">Cancelar</button>		
+  
+  </div>
+  <div data-role="footer">
+    <h6 align="center">Todos los derechos reservados.</h6>
+		<p align="center">Desarrollado por la Ing. Michelle G&oacute;mez</p>
+  </div>
 </div>
 
-<div data-role="page" id="fotostalleres">
-	<div data-role="header">
-		<h1>Fotos Talleres</h1>
-	</div>
-	<div data-role="content">	
-		Contenido		
-	</div>
-	<div data-role="footer">
-		<h4>Pie de página</h4>
-	</div>
+<div data-role="page" id="carganotastalleres">
+  <div data-role="header">
+    <a href="#page" data-role="button" data-icon="home" data-iconpos="right">Inicio</a><img src="images/logo.png" class="logots" ><span class="titulo">Cargar notas del Taller</span>
+  </div>
+  <div data-role="content">
+    <div class="ui-grid-b"  align="center">
+      <div class="ui-block-a" style="font-weight:bold; font-size:18px; background-color:#909FFF " >C&eacute;dula</div>
+      <div class="ui-block-b" style="font-weight:bold; font-size:18px;background-color:#909FFF">Estudiante</div>
+      <div class="ui-block-c" style="font-weight:bold; font-size:18px;background-color:#909FFF">Calificaci&oacute;n</div>
+      <div class="ui-block-a" style="background-color:#90D5FF"><br /><br /><br /><br /><br /></div>
+      <div class="ui-block-b" style="background-color:#90D5FF"><br /><br /><br /><br /><br /></div>
+      <div class="ui-block-c" style="background-color:#90D5FF">
+        <div data-role="fieldcontain">
+           
+          
+          <input type="range" name="slider" id="slider" value="0" min="0" max="4" />
+        </div>
+      </div>
+      <div class="ui-block-a" style="background-color:#909FFF" ><br /><br /><br /><br /><br /></div>
+      <div class="ui-block-b" style="background-color:#909FFF"  ><br /><br /><br /><br /><br /></div>
+      <div class="ui-block-c" style="background-color:#909FFF"  >
+      							<div data-role="fieldcontain">
+          
+          
+          <input type="range" name="slider" id="slider" value="0" min="0" max="4" />
+        </div>
+      </div>
+      <div class="ui-block-a" style="background-color:#90D5FF" ><br /><br /><br /><br /><br /></div>
+      <div class="ui-block-b" style="background-color:#90D5FF" ><br /><br /><br /><br /><br /></div>
+      <div class="ui-block-c" style="background-color:#90D5FF" >
+      				<div data-role="fieldcontain">
+          
+          
+          <input type="range" name="slider" id="slider" value="0" min="0" max="4" />
+        </div>
+      </div>
+      <div class="ui-block-a"  style="background-color:#909FFF" ><br /><br /><br /><br /><br /></div>
+      <div class="ui-block-b"  style="background-color:#909FFF" ><br /><br /><br /><br /><br /></div>
+      <div class="ui-block-c" style="background-color:#909FFF" >
+      							<div data-role="fieldcontain">
+          
+          
+          <input type="range" name="slider" id="slider" value="0" min="0" max="4" />
+        </div>
+      </div>
+    </div>
+  		<input type="button" value="Aceptar" data-icon="plus" />
+      <button data-icon="delete">Cancelar</button>		
+  
+  </div>
+  <div data-role="footer">
+    <h6 align="center">Todos los derechos reservados.</h6>
+		<p align="center">Desarrollado por la Ing. Michelle G&oacute;mez</p>
+  </div>
 </div>
 
-<div data-role="page" id="fotosencuentros">
-	<div data-role="header">
-		<h1>Fotos Encuentros</h1>
-	</div>
-	<div data-role="content">	
-		Contenido		
-	</div>
-	<div data-role="footer">
-		<h4>Pie de página</h4>
-	</div>
+<div data-role="page" id="carganotasencuentros">
+  <div data-role="header">
+    <a href="#page" data-role="button" data-icon="home" data-iconpos="right">Inicio</a><img src="images/logo.png" class="logots" ><span class="titulo">Cargar notas de los Encuentros</span>
+  </div>
+  <div data-role="content">
+    <div class="ui-grid-b"  align="center">
+      <div class="ui-block-a" style="font-weight:bold; font-size:18px; background-color:#909FFF " >C&eacute;dula</div>
+      <div class="ui-block-b" style="font-weight:bold; font-size:18px;background-color:#909FFF">Estudiante</div>
+      <div class="ui-block-c" style="font-weight:bold; font-size:18px;background-color:#909FFF">Calificaci&oacute;n</div>
+      <div class="ui-block-a" style="background-color:#90D5FF"><br /><br /><br /><br /><br /></div>
+      <div class="ui-block-b" style="background-color:#90D5FF"><br /><br /><br /><br /><br /></div>
+      <div class="ui-block-c" style="background-color:#90D5FF">
+        <div data-role="fieldcontain">
+           
+          
+          <input type="range" name="slider" id="slider" value="0" min="0" max="1" />
+        </div>
+      </div>
+      <div class="ui-block-a" style="background-color:#909FFF" ><br /><br /><br /><br /><br /></div>
+      <div class="ui-block-b" style="background-color:#909FFF"  ><br /><br /><br /><br /><br /></div>
+      <div class="ui-block-c" style="background-color:#909FFF"  >
+      							<div data-role="fieldcontain">
+          
+          
+          <input type="range" name="slider" id="slider" value="0" min="0" max="1" />
+        </div>
+      </div>
+      <div class="ui-block-a" style="background-color:#90D5FF" ><br /><br /><br /><br /><br /></div>
+      <div class="ui-block-b" style="background-color:#90D5FF" ><br /><br /><br /><br /><br /></div>
+      <div class="ui-block-c" style="background-color:#90D5FF" >
+      				<div data-role="fieldcontain">
+          
+          
+          <input type="range" name="slider" id="slider" value="0" min="0" max="1" />
+        </div>
+      </div>
+      <div class="ui-block-a"  style="background-color:#909FFF" ><br /><br /><br /><br /><br /></div>
+      <div class="ui-block-b"  style="background-color:#909FFF" ><br /><br /><br /><br /><br /></div>
+      <div class="ui-block-c" style="background-color:#909FFF" >
+      							<div data-role="fieldcontain">
+          
+          
+          <input type="range" name="slider" id="slider" value="0" min="0" max="1" />
+        </div>
+      </div>
+      
+  </div>
+  	<input type="button" value="Aceptar" data-icon="plus" />
+      <button data-icon="delete">Cancelar</button>		
+  
+  </div>
+  <div data-role="footer">
+    <h6 align="center">Todos los derechos reservados.</h6>
+		<p align="center">Desarrollado por la Ing. Michelle G&oacute;mez</p>
+  </div>
 </div>
 
-<div data-role="page" id="fotosotras">
-	<div data-role="header">
-		<h1>Otras fotos</h1>
-	</div>
-	<div data-role="content">	
-		Contenido		
-	</div>
-	<div data-role="footer">
-		<h4>Pie de página</h4>
-	</div>
+
+<div data-role="page" id="consultanotas">
+  <div data-role="header">
+    <a href="#page" data-role="button" data-icon="home" data-iconpos="right">Inicio</a><img src="images/logo.png" class="logots" ><span class="titulo">Consulta de notas</span>
+  </div>
+  <div data-role="content">
+    <div class="ui-grid-b"  align="center">
+      <div class="ui-block-a" style="font-weight:bold; font-size:18px; background-color:#909FFF " >C&eacute;dula</div>
+      <div class="ui-block-b" style="font-weight:bold; font-size:18px;background-color:#909FFF">Estudiante</div>
+      <div class="ui-block-c" style="font-weight:bold; font-size:18px;background-color:#909FFF">Calificaci&oacute;n</div>
+      	
+      <div class="ui-block-a" style="background-color:#90D5FF"> <br /></div>
+      <div class="ui-block-b" style="background-color:#90D5FF"><br /> </div>
+      <div class="ui-block-c" style="background-color:#90D5FF"> <br /></div>
+      
+       <div class="ui-block-a" style="background-color:#909FFF" ><br /></div>
+      <div class="ui-block-b" style="background-color:#909FFF"  > <br /></div>
+      <div class="ui-block-c" style="background-color:#909FFF"  > <br /></div>
+ 
+      <div class="ui-block-a" style="background-color:#90D5FF" ><br /> </div>
+      <div class="ui-block-b" style="background-color:#90D5FF" ><br /> </div>
+       <div class="ui-block-c" style="background-color:#90D5FF"> <br /></div>
+      
+      <div class="ui-block-a"  style="background-color:#909FFF" ><br /> </div>
+      <div class="ui-block-b"  style="background-color:#909FFF" ><br /> </div>
+      <div class="ui-block-c" style="background-color:#909FFF"  > <br /></div>
+      </div>
+  			
+  
+  </div>
+  <div data-role="footer">
+    <h6 align="center">Todos los derechos reservados.</h6>
+		<p align="center">Desarrollado por la Ing. Michelle G&oacute;mez</p>
+  </div>
 </div>
+
 
 </body>
 </html>
